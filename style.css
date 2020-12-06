@@ -1,0 +1,101 @@
+/*sets header and footer colors to the same*/
+header, footer {
+  background-color: #b21e35;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+main {
+  background-color: black;
+  margin: 0;
+}
+
+#about-me, #contact {
+  background-color: gray;
+}
+
+/*dotted border between sections*/
+hr {
+  border: 2px dotted #b21e35;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 48px;
+  height: 30px;
+}
+
+/*adjusts width and captions for all pictures*/
+.image-styling { 
+  width: 100%;
+}
+
+.caption {
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+ /*aligns all headings*/
+h2, h3, h4 {
+  text-align: center;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+}
+
+/*creates uniform font throughout site*/
+h2, h3, h4, p, a, ul, ol, li {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: auto;
+  line-height: 2;
+}
+
+p, a, ul, ol, li {
+  font-size: 16px;
+}
+
+/*Next two blocks of code align both ul and ol (lists) to the center*/
+ul, ol {
+  display: inline-block;
+  text-align: left;
+}
+
+.container {
+  width: auto;
+  padding: 2em;
+  text-align: center;
+}
+
+/*Flexbox groups and items (Mobile)*/
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+/*Flexbox groups and items (Desktop)*/
+@media all and (min-width: 800px) {
+
+  .wrapper {
+    width: 75%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+/*pseudo classes/color changes for all clickable links*/
+a:link {color: white;}
+a:visited {color: wheat;}
+a:hover {color: blue;}
+a:active {color: lightblue;}
